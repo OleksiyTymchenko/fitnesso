@@ -1,0 +1,365 @@
+.none{
+  display: none;
+}
+html, body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+  color: #081158;
+}
+
+p {
+  font-size: 16px;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62px;
+
+}
+h3{
+  font-size: 62px;
+}
+
+h4{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  background: #081158;
+  color: 
+  #FFFFFF;
+  padding-left: 40px;
+  position: relative;
+}
+
+.container-box {
+  max-width: 1368px;
+  width: 100%;
+  margin: auto;
+}
+
+.logo{
+  height: 20px;
+  width: 94px;
+}
+
+/*======================== header ====================================*/
+.navbar-nav{
+  display: flex;
+    align-items: center;
+}
+.nav-item .nav-link{
+  color: #081158;
+  padding: 0;
+  margin-top: 10px;
+}
+.nav-item{
+  padding: 0;
+  margin-right: 20px;
+  position: relative;
+}
+.nav-item:first-child, .nav-item:nth-child(2){
+  
+  margin-right: 40px;
+}
+
+.arrow{
+  background: url('./img/header/arrow.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 16px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.cart{
+  background: url('./img/header/cart.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+}
+
+.burger{
+  background: url('./img/header/burger.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+/*================= hero ===============*/
+.hero{
+  background-color: #EEF0F4;
+}
+.hero .container-box{
+  display: flex;
+  gap: 80px;
+  padding: 80px 0 150px;
+}
+.hero-image{
+  background: url('./img/hero/hero-image.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 659px;
+  height: 755px;
+}
+.photo-part h2{
+  font-family: 'Permanent Marker', cursive;
+  color: #8EA5A0;
+  text-align: center;
+}
+.text-part{
+
+  padding-top: 130px;
+}
+.hero .text-part p, .hero .text-part h1{
+  color: #081158;
+}
+
+.sup-text{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 200px) and (max-width: 1200px){
+  .hero .container-box{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .text-part{
+    margin-left: 20px;
+  }
+}
+/*================== recomend =====================*/
+.recomend{
+  padding: 93px 0 121px;
+  background-color: #081158;
+}
+
+.list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* .list-item{
+  margin-right: 30px;
+} */
+
+.list-item:last-child{
+  margin-right: 0;
+}
+
+.recomend .list-item a{
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 200px) and (max-width: 600px){
+  .recomend{
+    padding: 50px 0 50px;
+  }
+  .list{
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .list-item{
+    
+    margin-right: 0px;
+    margin: 0 0 30px 0;
+  }
+}
+
+/*============= jorney ==============*/
+.jorney{
+  padding: 78px 0 150px;
+  color: #081158;
+}
+
+.text-box{
+  max-width: 703px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.text-box .button{
+  margin-top: 26px;
+  margin-bottom: 100px;
+}
+
+
+.jorney-list{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 510px 510px;
+  gap: 200px;
+}
+.jorney-list-item{
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center;*/
+  text-align: center; 
+  
+}
+
+
+@media (min-width: 200px) and (max-width: 1220px){
+  .jorney-list{
+    gap: 50px;
+  }
+}
+@media (min-width: 200px) and (max-width: 1100px){
+  .jorney{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .jorney-list{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.jorney-image{
+  background: url('./img/jorney/jumping-girl.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+.jorney-list-item:nth-child(2) .jorney-image{
+  background: url('./img/jorney/manAndWheel.png') center / 100% 100% no-repeat;
+}
+.jorney-list-item:nth-child(3) .jorney-image{
+  background: url('./img/jorney/manAndBottle.png') center / 100% 100% no-repeat;
+}
+.jorney-list-item:nth-child(4) .jorney-image{
+  background: url('./img/jorney/womanInGym.png') center / 100% 100% no-repeat;
+}
+
+.jorney-list-item h4{
+  margin-top: 31px;
+  margin-bottom: 32px;
+}
+/*================ plans ==================*/
+.plans{
+  padding: 150px 0;
+  background-color: #EEF0F4;
+}
+
+.plans h2{
+  max-width: 787px;
+  width: 100%;
+  color: #081158;
+}
+
+.plans p{
+  max-width: 590px;
+  color: #081158;
+  margin-top: 31px;
+  margin-bottom: 25px;
+}
+@media (min-width: 200px) and (max-width: 1400px){
+  .plans{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.plans-list{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plans-list-item{
+  max-width: 423px;
+}
+
+.plans-list-image{
+  background: url('./img/plans/workout.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 400px;
+}
+
+.plans-list-item:nth-child(2) .plans-list-image{
+  background: url('./img/plans/BlackDay.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 400px;
+}
+
+.plans-list-item:nth-child(3) .plans-list-image{
+  background: url('./img/plans/tabata.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 400px;
+}
+
+.plans-list-item-text{
+  padding: 30px;
+  background-color: #fff;
+}
+.description-row{
+  display: flex;
+  justify-content: space-between;
+}
+.time{
+  text-transform: uppercase;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.plans .price{
+  color: #EC8675;
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+.plans-list-title{
+  font-size: 24px;
+}
+
+@media (min-width: 200px) and (max-width: 1372px){
+  .plans-list{
+    justify-content: center;
+  }
+  .plans-list-item-text{
+    padding: 50px;
+  }
+}
