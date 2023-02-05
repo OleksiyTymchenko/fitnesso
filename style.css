@@ -353,6 +353,7 @@ h4{
 
 .plans-list-title{
   font-size: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 200px) and (max-width: 1372px){
@@ -362,4 +363,110 @@ h4{
   .plans-list-item-text{
     padding: 50px;
   }
+}
+/*================ second-plans ================*/
+.second-plans{
+  background: url('./img/plans/bg.png') center / 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.second-plans h2, .second-plans p{
+  color: #fff;
+
+}
+
+.second-plans .plans-list-image{
+  background: url('./img/plans/home-burn.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 400px;
+}
+
+.second-plans .plans-list-item:nth-child(2) .plans-list-image{
+  background: url('./img/plans/meal-plan.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 400px;
+}
+
+.second-plans .plans-list-item:nth-child(3) .plans-list-image{
+  background: url('./img/plans/training.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 400px;
+}
+
+.price-box{
+  position: relative;
+  height: 30px;
+}
+
+.second-plans .small-price{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  color: #AFAFAF;
+  font-size: 11px;
+}
+.second-plans .plans-list-title{
+  color: #081158;
+}
+
+p.time{
+  color: #081158;
+}
+
+p.price{
+  margin: 0;
+}
+/*============== sweat ==================*/
+.sweat{
+  padding: 234px 0 255px;
+  text-align: center;
+  background: url('./img/sweat/bg.png') center / 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.sweat p {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 64px;
+  color: #fff;
+}
+/*==================== water ==================*/
+
+/*==================== trips ====================*/
+.trips{
+  padding: 150px 0;
+}
+
+.trips .text{
+  text-align: center;
+  color: #081158;
+}
+
+.trips .button{
+  text-transform: uppercase;
+}
+
+.list-of-photos{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.list-of-photos__item{
+  background: url('./img/trips/man.png') center / 100% 100% no-repeat;
+  background-size: cover;
+  width: 426px;
+  height: 600px;
+}
+
+.list-of-photos__item:nth-child(2){
+  background: url('./img/trips/food.png') center / 100% 100% no-repeat; 
+}
+.list-of-photos__item:last-child{
+  background: url('./img/trips/woman.png') center / 100% 100% no-repeat;
 }
