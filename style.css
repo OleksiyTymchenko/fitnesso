@@ -470,3 +470,29 @@ p.price{
 .list-of-photos__item:last-child{
   background: url('./img/trips/woman.png') center / 100% 100% no-repeat;
 }
+
+/*================== socials ===============*/
+.socials{
+  padding: 115px 0;
+  background-color: #EC8675;
+}
+
+.social-list{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1040px;
+  width: 100%;
+  margin: auto;
+}
+
+.social-icon{
+  height: 52px;
+  width: 52px;
+}
+
+.social-text{
+  font-family: "Red Hat Display", serif;;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 13px;
+}
